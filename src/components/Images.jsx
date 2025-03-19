@@ -11,13 +11,13 @@ const Images = () => {
             {imageData.map((image) => (
                 
                     <div key={image.id} className="masonry-item">
-                        <img src={image.largeImageURL} alt="image" className='masonry-img'/>
+                        <img loading='lazy' src={image.largeImageURL} alt="image" className='masonry-img'/>
                     </div>
                
             ))}
         </div>
     </>
-  )
+  ) 
 }
 
 export default Images
